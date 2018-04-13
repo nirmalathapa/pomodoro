@@ -1,0 +1,50 @@
+-body, html{	
+     margin: 0;	
+     padding: 0;	
+     font-family: sans-serif;	
+     font-size: 12px;	
+     color: black;	
+     display: grid;	
+     justify-content: center;	
+     align-content: center;	
+     justify-items: center;	
+     align-items: center;	
+    }	
+    h1{	
+     margin: 30px 0;	
+     color: tomato;	
+     font-weight: 800;	
+     font-size: 3.5rem;	
+        	
+    }	
+    
+    h2{	
+     margin: 40px 0;	
+     color: black;	
+     font-weight: 800;	
+     font-size: 4.5rem;	
+     text-align: center;	
+    }	
+    button{	
+      border-radius: 1px;	
+      padding: 10px 15px;	
+      font-size: 1.4rem;	
+      margin: 0 10px;	
+      border: 2px solid #eee;	
+    }	
+    .start{	
+      background: green;	
+      color: whitesmoke;	
+      font-weight: 100;	
+    }	
+    .stop{	
+      background:red;	
+      color: whitesmoke;	
+      font-weight: 100;	
+    }	
+    .reset{	
+      background: darkslateblue;	
+      color: whitesmoke;	
+      font-weight: 100;	
+    }	
+    
