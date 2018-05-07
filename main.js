@@ -1,14 +1,52 @@
-//click the button 	
-var button = document.getElementsByClassName('start');	
-var display = document.getElementsByClassName('display');
-var timer = 25;
-var timerBreak = 5;
+//start stop reset 
 
-button[0].addEventListener('click', function(){	    
+var countNum = 25 * 60;
+var countDownTimer;
+
+document.querySelector('.start').addEventListener('click', start);
+document.querySelector('.stop').addEventListener('click', stop);
+document.querySelector('.reset').addEventListener('click', reset);
+
+function addZero(digit){
+    if(digit < 10){
+        return '0' + digit;
+    }
+    return digit;
+}
+
+
+function display(num){
+    var min = Math.floor(num / 60);
+    var sec = num % 60;
+    return document.getElementsByClassName('display')[0].innerHTML = addZero(min) + ":" + addZero(sec);
+}
+
+function start(){
+    if(countDownTimer){
+        stop();
+    }
+
+    countDownTimer = setInterval(function(){
+    countNum = countNum - 1;
     
-    var counter = setInterval(function(){
-        
-    },1000);
-    clearInterval(counter);
-});	
- 
+    if(countNum <= 0){
+        stop();
+        countNum = 0;
+    }   
+
+    display(countNum);
+
+    }, 1000);    
+    
+}
+function stop(){
+    clearInterval(countDownTimer);
+}
+
+function reset(){
+    countNum = 25 * 60;
+    display(countNum);
+    stop();    
+}
+
+
