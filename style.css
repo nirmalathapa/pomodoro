@@ -1,5 +1,5 @@
--body, html{	
-     margin: 0;	
+body, html{	
+     margin: 0 auto;	
      padding: 0;	
      font-family: sans-serif;	
      font-size: 12px;	
@@ -9,43 +9,182 @@
      align-content: center;	
      justify-items: center;	
      align-items: center;	
-    }	
-    h1{	
-     margin: 30px 0;	
+}	
+button:focus{
+    outline: none;
+}
+
+header{
+    padding: 40px 0 10px 0;
+}
+h1{	
+    margin: 30px 0;	
      text-align: center;
      color: tomato;	
      font-weight: 800;	
      font-size: 3.5rem;	
         	
-    }	
-    
-    h2{	
-     margin: 40px 0;	
+}	    
+h2{	
+     margin: 60px 0 20px 0;	
      color: black;	
      font-weight: 800;	
      font-size: 4.5rem;	
      text-align: center;	
-    }	
-    button{	
-      border-radius: 1px;	
-      padding: 10px 15px;	
-      font-size: 1.4rem;	
-      margin: 0 10px;	
-      border: 2px solid #eee;	
-    }	
-    .start{	
-      background: green;	
-      color: whitesmoke;	
-      font-weight: 100;	
-    }	
-    .stop{	
-      background:red;	
-      color: whitesmoke;	
-      font-weight: 100;	
-    }	
-    .reset{	
-      background: darkslateblue;	
-      color: whitesmoke;	
-      font-weight: 100;	
-    }	
+}	
+
+.display{
+    color: tomato;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+.tomato {
+    background: #FF6347;
+    height: 50px;
+    width: 100px;
+    border-radius: 0 0 50px 50px;
+    position: relative;
+    left: 55px;
+    transition: all .3s ease-in-out;
+    top: 30px;
+}
+  
+.tomato:hover {
+    transform: scale(1.2);
+}
+  
+.tomato::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FF6347;
+    background: #FF6347;
+    position: absolute;
+    border-radius: 0 32px 0 0;
+    top: -32px;
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+  
+.tomato::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FF6347;
+    background: #FF6347;
+    position: absolute;
+    border-radius: 32px 0 0 0;
+    top: -32px;
+    transition: all .2s ease-in-out;
+ }
+  
+ .tomatoFill {
+    width: 36px;
+    height: 16px;
+    background: #FF6347;
+    position: absolute;
+    top: -16px;
+    left: 32px;
+    transition: all .2s ease-in-out;
+ }
+  
+ .tomatoFill::before {
+    content: "";
+    width: 18px;
+    height: 16px;
+    background: #FF6347;
+    position: absolute;
+    border-radius: 0 16px 0 0;
+    top: -16px;
+    transition: all .2s ease-in-out;
+ }
+  
+.tomatoFill::after {
+    content: "";
+    width: 18px;
+    height: 16px;
+    background: #FF6347;
+    position: absolute;
+    border-radius: 16px 0 0 0;
+    top: -16px;
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+  
+.tomatoTop {
+    background: #A8B848;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px 0 16px 0;
+    position: absolute;
+    transform: rotateZ(135deg);
+    top: -16px;
+    z-index: 1;
+    left: 41px;
+    transition: all .2s ease-in-out;
+}
+  
+.tomatoTop::before {
+    content: "";
+    background: #A8B848;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px 0 16px 0;
+    position: absolute;
+    z-index: 1;
+    transform: rotateZ(90deg);
+    top: 12px;
+    transition: all .2s ease-in-out;
+}
+  
+.tomatoTop::after {
+    content: "";
+    background: #A8B848;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px 0 16px 0;
+    position: absolute;
+    z-index: 1;
+    transform: rotateZ(90deg);
+    top: -2px;
+    right: 13px;
+    transition: all .2s ease-in-out;
+}
+  
+
+
+
+button{	
+    border-radius: 10px;	
+    padding: 10px 15px;	
+    font-size: 1.4rem;	
+    margin: 0 10px;	
+    border: 2px solid #eee;	
+    cursor: pointer;
+}	
+.start{	
+    background: green;	
+    color: whitesmoke;	
+    font-weight: 100;	
+}	
+.stop{	
+    background:#fb122f;	
+    color: whitesmoke;	
+    font-weight: 100;	
+}	
+.reset{	
+    background: #0066ff;	
+    color: whitesmoke;	
+    font-weight: 100;	
+}	
     
