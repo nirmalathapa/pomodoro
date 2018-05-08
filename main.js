@@ -2,24 +2,17 @@
 
 var countNum = 25 * 60;
 var countDownTimer;
+var sound = new Audio('398194__inspectorj__cuckoo-clock-single-a.wav');
+
 
 document.querySelector('.start').addEventListener('click', start);
 document.querySelector('.stop').addEventListener('click', stop);
 document.querySelector('.reset').addEventListener('click', reset);
 
-function addZero(digit){
-    if(digit < 10){
-        return '0' + digit;
-    }
-    return digit;
-}
+
+//when countDownTimer is 00:00 play sound
 
 
-function display(num){
-    var min = Math.floor(num / 60);
-    var sec = num % 60;
-    return document.getElementsByClassName('display')[0].innerHTML = addZero(min) + ":" + addZero(sec);
-}
 
 function start(){
     if(countDownTimer){
@@ -32,6 +25,9 @@ function start(){
     if(countNum <= 0){
         stop();
         countNum = 0;
+    }
+    if(countNum === 0){
+        sound.play();
     }   
 
     display(countNum);
@@ -49,4 +45,17 @@ function reset(){
     stop();    
 }
 
+function addZero(digit){
+    if(digit < 10){
+        return '0' + digit;
+    }
+    return digit;
+}
+
+
+function display(num){
+    var min = Math.floor(num / 60);
+    var sec = num % 60;
+    return document.getElementsByClassName('display')[0].innerHTML = addZero(min) + ":" + addZero(sec);
+}
 
