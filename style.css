@@ -44,15 +44,30 @@ h2{
 
 .tomato {
     background: #FF6347;
-    height: 50px;
-    width: 100px;
-    border-radius: 0 0 50px 50px;
+    height: 102px;
+    width: 128px;
+    border-radius:60px 60px;
     position: relative;
-    left: 55px;
+    left: 47px;
     transition: all .3s ease-in-out;
-    top: 30px;
+    top: 20px;
 }
-  
+.tomatoTop {
+    clip-path: polygon(61% 15%, 61% 40%, 86% 52%, 68% 57%, 76% 82%, 48% 66%, 13% 70%, 32% 54%, 16% 22%, 39% 38%);
+    background: #A8B848;
+    height: 100px;
+    width: 100px;
+    border-radius: 16px 0 16px 0;
+    position: absolute;
+    transform: rotateZ(135deg);
+    top: -41px;
+    z-index: 1;
+    left: 15px;
+    transition: all .2s ease-in-out;
+}
+
+
+ /* 
 .tomato:hover {
     transform: scale(1.2);
 }
@@ -155,7 +170,7 @@ h2{
     transition: all .2s ease-in-out;
 }
   
-
+*/
 
 
 button{	
