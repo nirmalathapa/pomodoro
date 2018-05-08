@@ -1,3 +1,3 @@
 # Pomodoro
 JS Pomodoro Timer 
-![image](pomodoro/image.png)
+![image](https://github.com/nirmalathapa/pomodoro/blob/master/image.png)
