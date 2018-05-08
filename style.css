@@ -54,7 +54,7 @@ h2{
 }
 .tomatoTop {
     clip-path: polygon(61% 15%, 61% 40%, 86% 52%, 68% 57%, 76% 82%, 48% 66%, 13% 70%, 32% 54%, 16% 22%, 39% 38%);
-    background: #A8B848;
+    background: rgb(90, 148, 13);
     height: 100px;
     width: 100px;
     border-radius: 16px 0 16px 0;
