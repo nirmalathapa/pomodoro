@@ -18,20 +18,28 @@ header{
     padding: 40px 0 10px 0;
 }
 h1{	
-    margin: 30px 0;	
-     text-align: center;
-     color: tomato;	
-     font-weight: 800;	
-     font-size: 3.5rem;	
+    margin: 20px 0;	
+    text-align: center;
+    color: tomato;	
+    font-weight: 800;	
+    font-size: 4.5rem;	
         	
 }	    
 h2{	
-     margin: 60px 0 20px 0;	
+     margin: 20px 0;	
      color: black;	
      font-weight: 800;	
      font-size: 4.5rem;	
      text-align: center;	
 }	
+.settings{
+    height: 50px;
+    margin: 30px 0;
+}
+.settings button{
+    border-radius: 5px;
+}
+
 
 .display{
     color: tomato;
@@ -44,13 +52,14 @@ h2{
 
 .tomato {
     background: #FF6347;
-    height: 102px;
-    width: 128px;
+    height: 85px;
+    width: 126px;
     border-radius:60px 60px;
     position: relative;
     left: 47px;
     transition: all .3s ease-in-out;
     top: 20px;
+    margin-bottom: 50px;
 }
 .tomatoTop {
     clip-path: polygon(61% 15%, 61% 40%, 86% 52%, 68% 57%, 76% 82%, 48% 66%, 13% 70%, 32% 54%, 16% 22%, 39% 38%);
@@ -197,3 +206,21 @@ button{
     font-weight: 100;	
 }	
     
+label{
+    display: block;
+}
+
+.break{
+    width:115px;
+    float: left;
+}
+input{
+    width: 75px;
+}
+
+#submit {
+    border-radius: 5px;
+    padding: 0;
+    font-size: 1rem;
+    padding: 5px 20px;
+}
